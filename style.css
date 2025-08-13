@@ -6,7 +6,7 @@
 
 
 #navbar{
-    border: 2px solid rgb(255, 255, 255);
+    border: 2px solid rgba(255, 255, 255, 0);
     height: 86px;
     width: 100vw;
     position: fixed;
@@ -49,7 +49,7 @@ top:50px;
 }
 #options  div a:hover{
    
-      color:#8000FF;
+      color: #A020F0;
 }
 
 #mainimage{
@@ -73,13 +73,13 @@ top:50px;
   
 }
 #endbar{
-    border: 2px solid rgb(249, 249, 249);
+    border: 2px solid rgba(249, 249, 249, 0);
     height: 98px;
     width: 220px;
     display: flex;
     position: fixed;
     left: 93rem;
-    background-color: #8000FF;
+    background-color:  #A020F0;
     justify-content: center;
    align-items: center; 
     color:white;
@@ -118,4 +118,148 @@ i {
   height: 40rem;
   width: 107rem;
 }
+#heading h1
+{
+ margin-top: 8rem;
+ text-align: center;
+ margin-bottom: 8rem;
+ margin-left: 10rem;
+ font-weight: bolder;
+}
+/* Section styling */
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
 
+.bg-white {
+  background-color: white;
+}
+
+.max-w-6xl {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+/* Grid layout */
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.md\:grid-cols-2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.items-center {
+  align-items: center;
+}
+
+/* Image wrapper */
+.image-box {
+  position: relative;
+}
+
+.image-box .bg-purple-500 {
+  background-color:  #A020F0; /* Tailwind purple-500 */
+  border-radius: 0.75rem; 
+
+}
+
+.image-box img {
+
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  width: 38rem;
+  height: 40rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* Background purple block offset */
+.image-box > div {
+  position: absolute;
+  bottom: -12px;
+  right: -12px;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  border-radius: 0.75rem;
+}
+
+
+h2{
+  font-size: 30px;
+}
+p{
+  font-size: 20px;
+}
+.image-box {
+  position: relative;
+  max-width: 500px; /* Optional: control image container width */
+}
+
+.image-box img {
+  position: relative;
+  z-index: 0; /* Keep image above purple box */
+}
+
+.image-box div {
+  z-index: 0; /* Purple box behind */
+  width: 34rem;
+  height: 40rem;
+}
+
+@media (max-width: 768px) {
+  .image-box {
+    max-width: 100%;
+  }
+}
+
+#after{
+  border: 1px solid  #A020F0;
+  height: 800px;
+  width:1700px;
+  background-color: #a73afa;
+}
+#after h1{
+  text-align: center;
+ font-size: 60px;
+  color: white;
+  margin-top: 120px;
+  font-weight:20px;
+}
+#allcard{
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+.one{
+
+  border: 2px solid #a73afa;
+  height: 25rem;
+  width: 20rem;
+  margin-left: 40px;
+  text-align: center;
+ 
+}
+.one p{
+ 
+  font-size: 29px;
+  color: white;
+  margin-top: 50px;
+}
+.one i{
+margin-bottom: 0px;
+margin-top: 10px;
+  
+}
+/* .one h1{
+  font-size: 10px;
+  margin-bottom: 0px;
+} */

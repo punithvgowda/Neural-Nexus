@@ -1,0 +1,121 @@
+*{
+    margin: 0px;
+    padding: 0;
+}
+
+
+
+#navbar{
+    border: 2px solid rgb(255, 255, 255);
+    height: 86px;
+    width: 100vw;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    padding: 5px;
+}
+#image img{
+        position: fixed;
+        height: 100px;
+        width: 250px;
+        top: 9px;
+        left: 40px;
+        
+
+}
+#options 
+{
+display: flex;
+position: absolute;
+left: 500px;
+top:50px;
+
+
+
+
+}
+#options  div{
+    margin-left: 45px;
+  font-family: "Libertinus Serif", serif;
+  font-size: 25px;
+  font-weight: bolder;
+  font-style: normal;
+
+  
+}
+#options  div a{
+    text-decoration: none;
+      color: black;
+}
+#options  div a:hover{
+   
+      color:#8000FF;
+}
+
+#mainimage{
+    height: 900px;
+    width: 450px;
+  position: absolute;
+  left: 450px;
+  top:0 px;
+    
+}
+
+#border
+{
+    /* border: 2px solid rgb(0, 0, 0); */
+    width: 100rem;
+    /* height: 100vh; */
+    margin-top: 102px;
+    /* margin-left: 140px; */
+    /* margin-right: 60px; */
+    position: absolute;
+  
+}
+#endbar{
+    border: 2px solid rgb(249, 249, 249);
+    height: 98px;
+    width: 220px;
+    display: flex;
+    position: fixed;
+    left: 93rem;
+    background-color: #8000FF;
+    justify-content: center;
+   align-items: center; 
+    color:white;
+    font-size: 20px;
+    z-index: 1;
+ transition: all 0.3s linear;
+    
+    
+}
+#endbar a
+{
+text-decoration: none;
+color: rgb(251, 251, 251);
+}
+#endbar a+i:hover{
+    background-color: #eaeaea;
+    color: black;
+}
+
+#endbar:hover{
+
+    color:black;
+    background-color: rgb(255, 255, 255);
+
+}
+i {
+  font-size: 24px;
+  color: #eaeaea;
+  margin-left: 20px;
+}
+#endbar:hover i{
+ color: black;
+ transform: rotate(25deg);
+}
+#neuralimage img{
+  height: 40rem;
+  width: 107rem;
+}
+

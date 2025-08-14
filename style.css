@@ -48,7 +48,7 @@ top:50px;
       color: black;
 }
 #options  div a:hover{
-   
+  
       color: #A020F0;
 }
 
@@ -238,6 +238,7 @@ p{
   display: flex;
   justify-content: center;
   margin-top: 5rem;
+  flex-wrap: wrap;
 }
 .one{
 
@@ -263,3 +264,18 @@ margin-top: 10px;
   font-size: 10px;
   margin-bottom: 0px;
 } */
+#icons{
+  animation: iconsanimation 2s linear 0s infinite normal;
+
+}
+@keyframes iconsanimation{
+  0%{
+    transform: translatey(0px);
+  }
+  50%{
+    transform: translatey(-9px);
+  }
+  100%{
+      transform: translatey(0px);
+  }
+}

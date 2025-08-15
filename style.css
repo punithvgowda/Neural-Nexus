@@ -43,7 +43,8 @@ top:50px;
 
   
 }
-#options  div a{
+#options  div a
+{
     text-decoration: none;
       color: black;
 }
@@ -52,7 +53,8 @@ top:50px;
       color: #A020F0;
 }
 
-#mainimage{
+#mainimage
+{
     height: 900px;
     width: 450px;
   position: absolute;

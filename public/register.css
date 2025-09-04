@@ -1,0 +1,20 @@
+body {
+    background-image: url("");
+    background-size: cover;       /* scale image to cover full screen */
+    background-position: center;  /* center the image */
+    background-repeat: no-repeat; /* prevent tiling */
+    height: 100vh;                /* full viewport height */
+    margin: 0;    
+     display: flex;
+  
+   justify-content: center;
+   align-items: center;                /* remove default margin */
+}
+.frame{
+    border: 2px solid black;
+    height: 700px;
+    width: 650px;
+    box-shadow: 2px 2px 10px;
+   
+ 
+}

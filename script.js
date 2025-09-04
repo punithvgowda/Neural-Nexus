@@ -1,7 +1,17 @@
 const express = require("express");
 const path = require("path");
 const app = express();
+const student=require("./schema");
+const mongoose=require("mongoose");
 
+async function main() {
+    mongoose.connect('mongodb://127.0.0.1:27017/myapp');
+    
+}
+main().then((res)=>{
+    console.log(" Connection successfull");
+})
+.catch((err)=>console.group(err));
 
 // ✅ view engine setup
 app.set("view engine", "ejs");
@@ -36,7 +46,18 @@ app.post("/register", (req, res) => {
     res.send("Registration successful ✅");
 });
 app.post("/registered",(req,res)=>{
-    const {email,password}=req.body;
-  res.send(` your email ${email} and password :${password} recorded sucessfully`)
+    const {email,age,password}=req.body;
+    const student1=new student({
+        email:email,
+        age:age,
+        password:password
+    })
+    student1.save()
+    .then((res)=>{
+        console.log(res);
+    })
+    .catch((err)=>console.log(err));
+    res.send(" ok done")
+
 
 })
